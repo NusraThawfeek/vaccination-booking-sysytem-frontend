@@ -1,0 +1,34 @@
+.hero{
+    width: 180px;
+    height: 180px;  
+   left: 80%;
+   
+    position: relative;
+}
+
+.hero-bg{
+    background-image: linear-gradient(to bottom right, rgb(97, 159, 230), white);
+    height: 250px;
+    margin-top:0 ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.hero-text{
+    position: absolute;
+    top: 120px;
+    color: #000;
+    font-family: sans-serif;
+    padding-left: 50px;
+    width: 70%;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+}
+
+@media only screen and (max-width: 992px){
+.hero{
+    left: 70%;
+}
+
+}
+
