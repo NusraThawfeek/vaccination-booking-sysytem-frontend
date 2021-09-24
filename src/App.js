@@ -5,7 +5,7 @@ import LoginForm from "./components/LoginForm/LoginForm";
 import Home from "./components/Home/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Route, Switch, useHistory } from 'react-router-dom'
+//Vaccination_frontendimport { BrowserRouter as Router, Route, Switch, useHistory } from 'react-router-dom'
 import AdminGs from './components/admin/AdminGs';
 import AdminMoh from './components/admin/AdminMoh';
 import Hero from './components/Hero';
