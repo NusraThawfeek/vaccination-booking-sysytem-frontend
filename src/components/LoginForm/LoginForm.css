@@ -6,13 +6,14 @@ body {
     font-family: /* 'Istok Web' ,*/ "Helvetica", sans-serif;
     font-size: 12px;
     margin: 0;
-    opacity: 0.7;
+    opacity: 0.5;
     height:100%;
     width:100%;
-    background: url (vaccine.jpg);
-    background-position: center;
+background-image: url("vaccine.jpg");
+
+    background-position: left;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 }
 #login {
     /*box form */
