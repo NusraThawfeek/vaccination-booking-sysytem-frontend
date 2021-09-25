@@ -22,7 +22,7 @@ function AdminHome() {
             <table class=" table table-bordered table-hover">
                     <thead>
                         <tr>
-                            <th scope="col">date</th>
+                            
                             <th scope="col">Center</th>
                             <th scope="col">GS division</th>
                             <th scope="col">MOH division</th>
@@ -33,7 +33,7 @@ function AdminHome() {
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
-                            <td>@mdo</td>
+                           
                         </tr>
                     </tbody>
                 </table>
