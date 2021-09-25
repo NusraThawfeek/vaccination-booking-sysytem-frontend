@@ -18,11 +18,11 @@ function App() {
 
   return (
 
-    <div className="App">
+
 
       <Router>
         <Navbar />
-        <div className="container d-flex align-items-center flex-column">
+
           <Switch>
             <Route path="/" exact={true}>
               <LoginForm
@@ -34,14 +34,14 @@ function App() {
               <Home />
             </Route>
           </Switch>
-        </div>
+
         <Switch>
           <Route exact path='/admin' component={AdminHome} />
           <Route exact path='/assign-gs' component={AdminGs} />
           <Route exact path='/assign-moh' component={AdminMoh} />
         </Switch>
       </Router>
-    </div>
+
 
   );
 }

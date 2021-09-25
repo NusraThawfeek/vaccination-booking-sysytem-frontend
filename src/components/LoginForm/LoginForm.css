@@ -1,19 +1,18 @@
 html,
-body {
-    height: 100%;
-}
-body {
+
+.loginmain{
     font-family: /* 'Istok Web' ,*/ "Helvetica", sans-serif;
     font-size: 12px;
     margin: 0;
-    opacity: 0.5;
     height:100%;
     width:100%;
-background-image: url("vaccine.jpg");
-
+    background-image:url("vaccine.jpg");
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.image {
+    background-repeat: no-repeat;
 }
 #login {
     /*box form */
@@ -52,20 +51,7 @@ background-image: url("vaccine.jpg");
     box-shadow: 0 0 1px 1px rgba(67, 42, 212, 0.8),
     0 0 5px 1px rgba(0, 0, 0, 0.5) inset;
 }
-#login:after {
-    transform: none;
-    border-bottom: 28px solid transparent;
-    border-left: 28px solid #607d8b;
-    border-right: 28px solid #607d8b;
-    height: 40px;
-    position: absolute;
-    right: -36px;
-    width: 0;
-    top: 88px;
-    content: "";
-    display: block;
-    z-index: 20;
-}
+
 h1 {
     text-transform: capitalize;
     text-align: right;
@@ -74,50 +60,20 @@ h1 {
     font-size: 35px;
     letter-spacing: -0.06em;
 }
-#ff-proof.ribbon:after {
-    /* falling ribbon */
-    transform: none;
-    border-top: 55px solid transparent;
-    border-left: 55px solid #607d8b;
-    border-right: 55px solid transparent;
-    height: 40px;
-    position: absolute;
-    right: -107px;
-    width: 0;
-    bottom: -43px;
-    content: "";
-    display: block;
-    z-index: 20;
-}
-.ribbon:before {
-    /*  falling ribbon shadow */
-    transform: rotate(280deg);
-    transform-origin: right bottom;
-    border-top: 55px solid rgba(0, 0, 0, 0.3);
-    border-right: 55px solid transparent;
-    bottom: 30px;
-    content: "";
-    display: block;
-    height: 0;
-    position: absolute;
-    right: -53px;
-    width: 20px;
-    z-index: 10;
-    box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.3);
-}
+
+
 .ribbon {
     /* ribbon  */
     background-color: #607d8b;
     background-size: 5px 5px, 100% 100%;
     background-image: linear-gradient(45deg , transparent 0%, transparent 25%, rgba(0, 0, 0, 0.15) 25%, rgba(0, 0, 0, 0.15) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.15) 75%, rgba(0, 0, 0, 0.15) 100%), rgba(0, 0, 0,.125) 20px),
 linear-gradient(top, #C94700, #B84100);
-
     border-top-right-radius: 20px 5px;
     color: white;
     height: 55px;
-    width: 460px;
+    width: 425px;
     line-height: 55px;
-    padding: 0 5px 0 0;
+    padding: 0 25px 0 0;
     margin-left: -32px;
     position: relative;
     text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.3);
@@ -143,8 +99,8 @@ fieldset#actions {
 fieldset#inputs {
     /* outline of inputs */
     padding: 10px;
-    margin: 0px;
-    width: 400px;
+    margin: 10px;
+    width: 350px;
     background-color: #c8bcb6;
     background: repeating-linear-gradient(
             45deg,
@@ -163,26 +119,13 @@ fieldset#inputs {
         width: 440px !important;
     }
 }
-fieldset#inputs:before {
-    /* stitching around the inputs */
-    content: "";
-    padding: 0px;
-    margin: -18px -22px;
-    width: 435px;
-    height: 145px;
-    position: absolute;
-    border: 1px dashed rgba(143, 143, 143, 0.7);
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.8),
-    0 0 1px 1px rgba(0, 0, 0, 0.5) inset;
-    border-radius: 2px;
-    z-index: -1;
-}
+
 #inputs input {
     /*input icons */
     background: #f1f1f1
     url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAABkCAYAAACPQLC2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAhtJREFUeNrsV1FuwjAMbRECBAIqxD+7ARyhOwE9QvfDd28wbrB+8wNHaG9QblBuAP9IzeADAYLOntwqZQlk6z6mKZEMkRO/2o7T+plpmhplRsUoOTSABtAA/wagij+z2ayg7Pf7XfgLQGxSRSDOdrt95/dNJhOxB9frNQCxQQwSnAdSD24HvOZsgdpWzgG+J0ViWdZAFSASAESMsY0qgIMGWQ4I0FHOwW63w2w/t9vtwX6/3yjVQbPZ7IK8tVqtFCSBeW6Mc9ThGu6RheCDeBSvBfMptzZFHX2EPACZFwAajcYYYnW5c0dxQT9EkayN8xwAsisJMb4TPtqEGYDzg2vg5B6gW6UuU5kvdOVO5T2SiAfAyluAMAVDRns/c2DqBkMDaAANoAE0gAbQAH+PsdyyFQFz8amls0jNSOcjg6nKjHu93gDav5gzzEbWBjuwx5aGQI2UxTdYMBZoCPMYZATiCT0AZjIU0Z4kSV5o3SBS5slIly1q8TqdzpDWnayrl5EuS9L+xUBCGL8uA4junByfVCYDcBXLIPiSA2QjCEAxxg9a3mnBA2Ahc2QjHN21JU9em6bpHA6HTQ5Qr9fnnOuZ8ZrOHgtqlCXyeDyGBb5Qq9VExp+s5HQ6rWgeCu8CjFeB2wxc9M/n8+rhZeIqLn8yxgfGS6XbSAWx5t2+XC5L5fcBHckTHYsH4YTfeR9oxqIBNIAG+DWADwEGAAgZ5RSSVu1LAAAAAElFTkSuQmCC)
     no-repeat;
-    padding: 15px 15px 15px 30px;
+    padding: 5px 5px 5px 30px;
     margin: 0 0 10px 5px;
     width: 85%;
     border: 1px solid #ccc;
@@ -266,18 +209,4 @@ fieldset#inputs:before {
     box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.5) inset,
     0 2px 2px 2px #1f1f1f inset;
     border-radius: 5px;
-}
-.option:after {
-    content: "";
-    width: 260px;
-    height: 40px;
-    left: 78px;
-    top: 50px;
-    position: absolute;
-    border: 1px dashed rgba(143, 143, 143, 0.7);
-    border-bottom: none;
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.8),
-    0 0 1px 1px rgba(0, 0, 0, 0.5) inset;
-    border-radius: 2px;
-    z-index: -1;
 }

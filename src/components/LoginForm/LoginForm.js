@@ -2,10 +2,9 @@ import React, { useState } from "react";
 
 import "./LoginForm.css";
 
-import { withRouter } from "react-router-dom";
-
-function LoginForm(props) {
+function LoginForm() {
     return (
+        <div id="loginmain" >
         <form id="login" action="none">
             <h1 id="ff-proof" class="ribbon">
                 COVID-19 Vaccination &nbsp;&nbsp;
@@ -22,6 +21,7 @@ function LoginForm(props) {
                 </p>
             </fieldset>
         </form>
+        </div>
     );
 }
-export default withRouter(LoginForm);
+export default LoginForm
