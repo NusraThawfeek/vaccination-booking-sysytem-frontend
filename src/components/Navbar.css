@@ -1,0 +1,35 @@
+
+.hide-on-med-and-down1 {
+   padding-right: 10px;
+}
+
+.material-icons{
+    cursor: pointer;
+}
+
+nav ul a {
+    font-size: 20px;
+    padding: 0 15px 0 15px;
+}
+
+
+
+nav .brand-logo {
+
+  position:relative ;
+  padding-left: 50px;
+  font-size: 25px;
+
+}
+@media only screen and (max-width: 992px){
+
+     .menu{
+        display: block;
+        padding-right:25px ;
+    }
+
+    nav .brand-logo {
+        left: 200px;
+
+    }
+}
